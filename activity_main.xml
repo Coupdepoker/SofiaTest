@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="200dp">
+        <EditText
+            android:id="@+id/editTextTextPersonName2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:ems="7"
+            android:inputType="none"
+            android:enabled="false"
+            android:text="Convention :" />
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="20dp"
+            android:textSize="10dp"
+            android:id="@+id/button1"
+            android:text="Ajouter Attestation"></Button>
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="60dp"
+            android:textSize="10dp"
+            android:id="@+id/button2"
+            android:text="Afficher Attestation"></Button>
+
+        <ScrollView
+            android:layout_width="100dp"
+            android:layout_height="200dp"
+            android:layout_weight="1"
+            android:scrollbars="vertical"
+            android:fadeScrollbars="false"
+            tools:ignore="MissingConstraints"
+            >
+
+            <TableLayout
+                android:id="@+id/tl"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:stretchColumns="*"
+                android:isScrollContainer="true"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="1dp"
+                tools:layout_editor_absoluteY="1dp">
+
+
+            </TableLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="200dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_weight="1"
+            android:fillViewport="true"
+            android:fadeScrollbars="false"
+            android:scrollbars="vertical"
+            tools:ignore="MissingConstraints">
+
+            <EditText
+                android:id="@id/editText1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></EditText>
+        </ScrollView>
+    </RelativeLayout>
+
+        <EditText
+            android:id="@+id/editTextTextPersonName4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="210dp"
+            android:layout_alignParentBottom="true"
+            android:ems="10"
+            android:inputType="none"
+            android:enabled="false"
+            android:text="Informations Attestation" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_weight="1"
+            android:layout_alignParentBottom="true"
+            android:fadeScrollbars="false"
+            android:scrollbars="vertical"
+            android:fillViewport="true"
+            tools:ignore="MissingConstraints">
+
+
+
+            <EditText
+                android:id="@+id/edit2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:ems="3"
+                android:inputType="none"
+                android:enabled="false"
+                android:text="" />
+        </ScrollView>
+
+
+</RelativeLayout>
